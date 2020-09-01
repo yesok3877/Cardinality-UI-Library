@@ -956,4 +956,5 @@ local screenscale = 250r
 local opacity = 1
 local backcolor = Color3.new()
 
+print(gui)
 return gui
