@@ -883,7 +883,7 @@ local GUIData = (function()
 	end
 	
 	-- UI Creation Library
-	function gui.make(self, guiType, data)
+	function gui.create(self, guiType, data)
 		if self == gui then
 			self = settingsArray
 		end
@@ -976,3 +976,4 @@ pcall(function()
 		print("Save Data not found")
 	end
 end)
+return gui
