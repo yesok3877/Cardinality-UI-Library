@@ -941,13 +941,6 @@ local GUIData = (function()
 end)()
 
 --// Variables
-local RunService = game:GetService("RunService")
-local HttpService = game:GetService("HttpService")
-local UserInputService = game:GetService("UserInputService")
-local Players = game:GetService("Players")
-  local Player = Players.LocalPlayer
-    local Mouse = Player:GetMouse()
-
 local gui = GUIData[1]
 local saveData = GUIData[2]
 local screenGui = GUIData[3]
@@ -956,4 +949,4 @@ local screenscale = 250
 local opacity = 1
 local backcolor = Color3.new()
 
-return gui
+return gui, saveData, screenGui, screenscale, opacity, backcolor
