@@ -942,11 +942,9 @@ end)()
 
 --// Variables
 local gui = GUIData[1]
-local saveData = GUIData[2]
 local screenGui = GUIData[3]
 
 local screenscale = 250
 local opacity = 1
-local backcolor = Color3.new()
 
-return gui, saveData, screenGui, screenscale, opacity, backcolor
+return gui, screenGui, screenscale, opacity
