@@ -976,4 +976,4 @@ pcall(function()
 		print("Save Data not found")
 	end
 end)
-return gui
+return true
