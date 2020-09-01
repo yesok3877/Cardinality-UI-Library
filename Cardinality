@@ -51,13 +51,6 @@ local GUIData = (function()
 	local hotkeyFunctions = {}
 	local gui = {}
 	
-	-- Save Functions
-	local writefile = writefile or function() end
-	local function Save()
-		local JSONData = HttpService:JSONEncode(saveData)
-		writefile("Cardinality.txt", JSONData)
-	end
-	
 	-- Color Functions
 	local color = {}
 	local colors = {
@@ -959,21 +952,8 @@ local gui = GUIData[1]
 local saveData = GUIData[2]
 local screenGui = GUIData[3]
 
-local screenscale = 250
+local screenscale = 250r
 local opacity = 1
 local backcolor = Color3.new()
 
---// Saving
-local readfile = readfile or function() end
-pcall(function()
-	local JSONData = readfile("Cardinality.txt")
-	if JSONData then
-		local LUAData = HttpService:JSONDecode(JSONData)
-		saveData.Options = LUAData.Options
-		saveData.Hotkeys = LUAData.Hotkeys
-		print("Save Data found")
-	else
-		print("Save Data not found")
-	end
-end)
 return true
