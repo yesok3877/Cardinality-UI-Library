@@ -952,7 +952,7 @@ local gui = GUIData[1]
 local saveData = GUIData[2]
 local screenGui = GUIData[3]
 
-local screenscale = 250r
+local screenscale = 250
 local opacity = 1
 local backcolor = Color3.new()
 
