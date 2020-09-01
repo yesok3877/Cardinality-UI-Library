@@ -883,7 +883,7 @@ local GUIData = (function()
 	end
 	
 	-- UI Creation Library
-	function gui.create(self, guiType, data)
+	function gui.make(self, guiType, data)
 		if self == gui then
 			self = settingsArray
 		end
